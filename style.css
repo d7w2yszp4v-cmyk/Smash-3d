@@ -1,0 +1,194 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #07140e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+#game {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+h2 span,
+h1 span {
+  color: #d7ff54;
+}
+
+.score {
+  background: #10251bdc;
+  padding: 13px 20px;
+  border: 1px solid #ffffff30;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.score b {
+  font-size: 25px;
+  margin: 0 8px;
+}
+
+#status {
+  text-align: center;
+  color: #d7ff54;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.instructions {
+  background: #10251bdc;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 13px;
+  padding: 15px 20px;
+  font-weight: 900;
+  touch-action: manipulation;
+}
+
+#hit,
+#start {
+  background: #d7ff54;
+  color: #08130f;
+}
+
+#reset {
+  background: #14271d;
+  color: white;
+  border: 1px solid #ffffff35;
+}
+
+#intro {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: #06120edb;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  pointer-events: auto;
+}
+
+.card {
+  width: min(420px, 100%);
+  padding: 32px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #193426, #0a1710);
+  border: 1px solid #ffffff25;
+}
+
+.tag {
+  color: #d7ff54;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: .95;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+
+.card p {
+  color: #bdc9c0;
+  line-height: 1.6;
+}
+
+#start {
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .score {
+    padding: 9px;
+  }
+
+  .score b {
+    font-size: 19px;
+    margin: 0 3px;
+  }
+
+  .bottom {
+    left: 12px;
+    right: 12px;
+    bottom: 15px;
+  }
+
+  .instructions {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 13px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}

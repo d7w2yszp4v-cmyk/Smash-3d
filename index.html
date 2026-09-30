@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smash 3D Badminton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <header>
+      <h2>SMASH<span>3D</span></h2>
+      <div class="score">
+        YOU <b id="you">0</b> :
+        <b id="cpu">0</b> CPU
+      </div>
+    </header>
+
+    <div id="status">READY TO PLAY</div>
+
+    <div class="bottom">
+      <div class="instructions">
+        Move: WASD / Arrow keys<br>
+        Hit: SPACE or HIT button
+      </div>
+      <div class="buttons">
+        <button id="reset">RESET</button>
+        <button id="hit">HIT ↗</button>
+      </div>
+    </div>
+
+    <div id="intro">
+      <div class="card">
+        <p class="tag">3D ARCADE BADMINTON</p>
+        <h1>OWN THE<br><span>RALLY.</span></h1>
+        <p>Challenge the computer and score 7 points to win!</p>
+        <button id="start">START MATCH →</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
